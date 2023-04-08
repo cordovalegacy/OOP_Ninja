@@ -13,7 +13,7 @@ class Ninja{
 
     showStats(){
         console.log(`${this.name}'s Stats\nHealth: ${this.health}\nSpeed: ${this.speed}\nStrength: ${this.strength}`)
-        return this
+        
     }
 
     drinkSake(boost){
@@ -24,7 +24,7 @@ class Ninja{
 
 
 const boost = 10
-ninja1 = new Ninja("Charles", 10)
+const ninja1 = new Ninja("Charles", 10)
 ninja1.drinkSake(boost).sayName().showStats()
 
 //You don't need to return this when you're just console logging and not actually returning a value...BUT
